@@ -1,0 +1,5 @@
+1.Bean类
+WangAndroidApi.java -- 接口api
+ProjectBean.java -- 数据bean
+2.HttpUtil
+Retrofit初始化

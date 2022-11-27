@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   tools:context=".MainActivity">
 
-  <TextView
-    android:layout_width="wrap_content"
+  <LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Hello World!"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+      android:id="@+id/start_demo1_activity"
+      style="@style/normalBtn"
+      android:text="demo1:观察者模式" />
+
+    <Button
+      android:id="@+id/start_demo2_activity"
+      style="@style/normalBtn"
+      android:text="demo2:RxJava-Hook" />
+
+    <Button
+      android:id="@+id/start_demo3_activity"
+      style="@style/normalBtn"
+      android:text="demo3:RxJava的观察者模式" />
+
+    <Button
+      android:id="@+id/start_demo4_activity"
+      style="@style/normalBtn"
+      android:text="demo4:map变换" />
+
+  </LinearLayout>
+</ScrollView>
